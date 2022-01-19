@@ -18,7 +18,7 @@ class CustomMovieCard extends StatelessWidget {
       width: double.infinity,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.all(Radius.circular(10)),
-        color: Colors.grey,
+        color: Colors.grey.withOpacity(0.4),
       ),
       child: Container(
         margin: EdgeInsets.all(10),
@@ -51,9 +51,9 @@ class CustomMovieCard extends StatelessWidget {
                             padding: EdgeInsets.only(left: 5, right: 5),
                             child: CustomText(
                               text: "Title :",
-                              color: Colors.white,
-                              size: 20,
-                              weight: FontWeight.w600,
+                              color: Colors.white60,
+                              size: 15,
+                              weight: FontWeight.w400,
                               overflow: TextOverflow.ellipsis,
                             ),
                           ),
@@ -66,6 +66,7 @@ class CustomMovieCard extends StatelessWidget {
                               size: 20,
                               weight: FontWeight.w600,
                               overflow: TextOverflow.ellipsis,
+                              maxLines: 3,
                             ),
                           ),
                         ],
@@ -79,9 +80,9 @@ class CustomMovieCard extends StatelessWidget {
                             padding: EdgeInsets.only(left: 5, right: 5),
                             child: CustomText(
                               text: "Year :",
-                              color: Colors.white,
-                              size: 20,
-                              weight: FontWeight.w600,
+                              color: Colors.white60,
+                              size: 15,
+                              weight: FontWeight.w400,
                               overflow: TextOverflow.ellipsis,
                             ),
                           ),

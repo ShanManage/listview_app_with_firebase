@@ -11,10 +11,11 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        centerTitle: true,
         title: CustomText(
           text: "Listview App",
           color: Colors.white,
-          size: 20,
+          size: 25,
           weight: FontWeight.w600,
         ),
       ),
